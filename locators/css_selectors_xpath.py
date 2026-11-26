@@ -92,6 +92,9 @@ try:
 
 
 
+
+
+
     #ilcarro
     #start -> ^
     #starts = driver.find_element(By.CSS_SELECTOR,"[class^='login']")
