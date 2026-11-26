@@ -82,6 +82,15 @@ try:
     div_7 = driver.find_element(By.XPATH,"//h1/ancestor-or-self::*")#нумерация
 
 
+    ancestors = driver.find_elements(By.XPATH,"//h1/ancestor::*")
+    for ancestor in ancestors:
+        print(ancestor.tag_name)
+
+    ancestors = driver.find_elements(By.XPATH,"//h1/ancestor::*")
+    for ancestor in ancestors:
+        print(ancestor.text)
+
+
 
 
 
