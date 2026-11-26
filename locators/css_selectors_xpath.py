@@ -63,10 +63,33 @@ try:
 
     #by Name
     name_input_1 = driver.find_element(By.NAME,"email")
+    name_input_2 = driver.find_element(By.XPATH,"//*[text()='Registration']")
+    nam_input_3 = driver.find_element(By.XPATH,"//*[contains(text(),'Registration')]")
 
 
     #by text only xPath
     login_button = driver.find_element(By.XPATH,"//*[text()='Login']")
+
+    #parent
+    div_4  = driver.find_element(By.XPATH,"//h1/..")
+    div_5  = driver.find_element(By.XPATH,"//h1/parent::div")
+    div_6  = driver.find_element(By.XPATH,"//h1/parent::*")
+
+    #ancestor
+    div_9 = driver.find_element(By.XPATH,"//h1/ancestor::*")
+    div_10 = driver.find_element(By.XPATH,"//h1/ancestor::body")
+    div_8 = driver.find_element(By.XPATH,"//h1/ancestor::div[@id='root']")
+    div_7 = driver.find_element(By.XPATH,"//h1/ancestor-or-self::*")#нумерация
+
+
+
+
+
+
+
+
+
+
 
 
     #ilcarro
